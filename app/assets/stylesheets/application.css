@@ -18,13 +18,38 @@
 	color: #0000FF;
 }
 
+
+/* form styling */
+form {
+  border: 1px dotted #0000EE;
+  width: 45%;
+  padding: 2%;
+}
+
+form label {
+  font-size: 0.8em;
+}
+
+form input {
+  background: #EEEEFF;
+  width: 60%;
+  text-align: left;
+
+  display: block;
+}
+
+form .submitbutton {
+  background: #0000FF;
+  color: #FFFFFF;
+  font-size: 1.2em;
+  margin-top:2%;
+}
+
 /* table styling */
 table {
 	width: 30%;
 	margin-left: 2%;
 }
-
-
 
 th, td {
 	text-align: left;
