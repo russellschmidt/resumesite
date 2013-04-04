@@ -1,13 +1,8 @@
 Resumesite::Application.routes.draw do
-  resources :users, except: [:destroy]
 
-  #get "users/index"
-
-  #get "users/show"
-
-  #get "users/new"
-
-  #get "users/edit"
+  resources :users, except: [:destroy] do
+    resources :resumes, except: [:destroy]
+  end
 
   # The priority is based upon order of creation:
   # first created -> highest priority.
