@@ -11,3 +11,22 @@
  *= require_self
  *= require_tree .
  */
+
+/* user profile styling */
+.username {
+	font-family: monospace;
+	color: #0000FF;
+}
+
+/* table styling */
+table {
+	width: 30%;
+	margin-left: 2%;
+}
+
+
+
+th, td {
+	text-align: left;
+	padding: 0.5% 1% 0.5% 1%;
+}
