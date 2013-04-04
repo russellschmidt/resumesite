@@ -1,5 +1,6 @@
 Resumesite::Application.routes.draw do
-  resources :users
+  resources :users, except: [:destroy]
+
   #get "users/index"
 
   #get "users/show"

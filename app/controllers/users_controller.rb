@@ -16,9 +16,9 @@ class UsersController < ApplicationController
   	@user = User.new(params[:user])
 
     if @user.save
-      #flash[:success] = "Another noob is made"
-      redirect_to @user
+      redirect_to @user, notice: "Another noob is made."
     else
+      flash[:notice] = "Enter the user again, please."
       render action: :new
     end
   end
@@ -31,9 +31,10 @@ class UsersController < ApplicationController
   def update
     @user = User.find(params[:id])
     if @user.update_attributes(params[:user])
-      #flash[:success] = "Successful update is successful"
+      flash[:notice] = "Successful update is successful."
       redirect_to @user
     else
+      flash[:notice] = "Problem with your update; try again please."
       render action: :edit
     end
   end
