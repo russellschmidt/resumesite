@@ -18,7 +18,7 @@ class UsersController < ApplicationController
     if @user.save
       redirect_to @user, notice: "Another noob is made."
     else
-      flash[:notice] = "Enter the user again, please."
+      flash[:notice] = "Enter all the info again, please."
       render action: :new
     end
   end

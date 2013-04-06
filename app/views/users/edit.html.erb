@@ -1,6 +1,7 @@
 <h1>Edit <%= @user.username %></h1>
-<p>Find me in the club, bottle full of bub</p>
-
+<p>Change the settings for <%= @user.username %></p>
+<p>Go back to the profile without making changes <%= link_to "here", user_path %></p>
+<p>Go back to the list of users <%= link_to "here", users_path %></p>
 <%= form_for(@user) do |form| %>
   
   <%= form.label :username %>
